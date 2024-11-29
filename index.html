@@ -13,7 +13,7 @@
             padding: 20px;
             background-color: #f5f5f5;
         }
-        h1 {
+        h1, h2 {
             color: #333;
             border-bottom: 2px solid #666;
             padding-bottom: 10px;
@@ -21,26 +21,123 @@
         p {
             color: #666;
         }
-        ul {
+        ul, .content-section {
             background-color: white;
             padding: 20px 40px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
         li {
             margin-bottom: 10px;
             color: #444;
         }
+        .code-block {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+        .resources {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .resources li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .resources li:last-child {
+            border-bottom: none;
+        }
+        .trending {
+            background-color: #fff3e0;
+            padding: 15px 25px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
+        }
+        .project-link {
+            color: #0366d6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        .tag {
+            background-color: #e1f5fe;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            color: #0277bd;
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to MCP Test</h1>
-    <p>This is a simple test page to demonstrate GitHub workflows.</p>
-    <ul>
-        <li>Repository creation</li>
-        <li>File management</li>
-        <li>Branch operations</li>
-        <li>Pull requests</li>
-    </ul>
+    
+    <div class="trending">
+        <h2>🔥 Trending in Open Source</h2>
+        <p>Stay up to date with the most exciting developments in the open-source world! Here are some trending projects that are shaping the future of technology:</p>
+        <ul>
+            <li>
+                <a href="https://github.com/starRocks/starrocks" class="project-link">StarRocks</a>
+                <span class="tag">Analytics</span>
+                <span class="tag">Big Data</span>
+                <p>The world's fastest open query engine for sub-second analytics, supporting both lakehouse and traditional scenarios.</p>
+            </li>
+            <li>
+                <a href="https://github.com/tensorflow/tensorflow" class="project-link">TensorFlow</a>
+                <span class="tag">AI</span>
+                <span class="tag">Machine Learning</span>
+                <p>Google's powerful open-source platform for machine learning and artificial intelligence.</p>
+            </li>
+            <li>
+                <a href="https://github.com/FreeCAD/FreeCAD" class="project-link">FreeCAD</a>
+                <span class="tag">3D</span>
+                <span class="tag">Engineering</span>
+                <p>A free and opensource multiplatform 3D parametric modeler, revolutionizing CAD software accessibility.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>About This Project</h2>
+        <p>This is a demonstration project that showcases various GitHub workflows and web development practices. Whether you're a beginner or an experienced developer, this project provides practical examples of common development tasks.</p>
+    </div>
+
+    <div class="content-section">
+        <h2>Getting Started</h2>
+        <p>To get started with this project, follow these steps:</p>
+        <ul>
+            <li>Clone the repository</li>
+            <li>Review the code structure</li>
+            <li>Make your first contribution</li>
+            <li>Submit a pull request</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>Example Code</h2>
+        <p>Here's a simple example of how to clone this repository:</p>
+        <div class="code-block">
+            git clone https://github.com/smian0/mcp-test.git<br>
+            cd mcp-test<br>
+            code .
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2>Useful Resources</h2>
+        <ul class="resources">
+            <li>📚 GitHub Documentation</li>
+            <li>🚀 Git Command Reference</li>
+            <li>💻 Web Development Guides</li>
+            <li>🤝 Contributing Guidelines</li>
+        </ul>
+    </div>
 </body>
 </html>
